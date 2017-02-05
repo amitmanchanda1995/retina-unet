@@ -37,7 +37,7 @@ else:
 if nohup:
     print "\n2. Run the training on GPU with nohup"
     os.system(
-        run_GPU + ' nohup python -u ./src/retinaNN_training.py > ' + './' + name_experiment + '/' + name_experiment + '_training.nohup')
+        run_GPU + ' python -u ./src/retinaNN_training.py')
 else:
     print "\n2. Run the training on GPU (no nohup)"
     os.system(run_GPU + ' python ./src/retinaNN_training.py')
